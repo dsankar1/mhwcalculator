@@ -11,5 +11,6 @@ func main() {
 		Root:   "build",
 		Browse: true,
 	}))
+	e.File("/*", "build/index.html")
 	e.Logger.Fatal(e.Start(":80"))
 }
